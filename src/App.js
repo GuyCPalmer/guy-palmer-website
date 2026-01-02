@@ -377,7 +377,7 @@ export default function App() {
           </div>
           
           {/* Terminal Window */}
-          <div className="mb-8 text-left max-w-3xl mx-auto bg-slate-900/90 backdrop-blur-sm border-2 border-cyan-500/40 rounded-xl shadow-2xl shadow-cyan-500/30 overflow-hidden">
+          <div className="mb-8 text-left max-w-2xl mx-auto bg-slate-900/90 backdrop-blur-sm border-2 border-cyan-500/40 rounded-xl shadow-2xl shadow-cyan-500/30 overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-3 bg-slate-800/90 border-b border-cyan-500/20">
               <div className="flex gap-2">
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
@@ -386,7 +386,7 @@ export default function App() {
               </div>
               <span className="text-base text-slate-400 ml-2 font-mono">terminal</span>
             </div>
-            <div className="p-8 space-y-4 font-mono text-base">
+            <div className="p-6 space-y-4 font-mono text-base">
               <div>
                 <span className="text-green-400">$</span>
                 <span className="text-slate-300"> whoami</span>
