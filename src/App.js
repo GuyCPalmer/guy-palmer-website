@@ -613,7 +613,7 @@ export default function App() {
     </div>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {filteredPosts.map((post, idx) => (
+      {filteredPosts.slice(0, 3).map((post, idx) => (
     <a 
     key={idx}
     href={post.url}
@@ -628,6 +628,7 @@ export default function App() {
         </span>
         <span className="text-sm text-slate-400">{post.date}</span>
       </div>
+      
       <ExternalLink className="w-4 h-4 text-slate-500 group-hover:text-cyan-400 transition-colors" />
     </div>
     <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
@@ -637,6 +638,18 @@ export default function App() {
   </a>
 ))}
   </div>
+{/* View All Posts Button */}
+<div className="text-center mt-12">
+  <a
+    href="https://medium.com/@guycpalmer_26364"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold rounded-lg transition-all hover:scale-105"
+  >
+    View All Blogs
+    <ExternalLink className="w-5 h-5" />
+  </a>
+</div> 
   </div>
 </section>
       {/* Contact Section */}
