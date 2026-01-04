@@ -44,13 +44,14 @@ export default function App() {
   ];
 
   const projects = [
-    {
-      title: 'Security Automation Tool',
-      description: 'Automated security monitoring and alerting system built with Python and Azure.',
-      tags: ['Python', 'Azure', 'PowerShell'],
-      icon: Shield,
-      url: '#'
-    },
+      {
+    title: 'Fraud Detection Dashboard',
+    description: 'Built a Splunk dashboard analyzing 10,000+ financial transactions to detect fraud patterns across demographics, categories, and merchants using custom SPL queries.',
+    tags: ['Splunk', 'SPL', 'Data Analysis', 'Fraud Detection'],
+    icon: Shield,
+    url: 'https://github.com/GuyCPalmer/Fraud-Analysis---Splunk-Dashboard-to-Combat-Financial-Fraud'
+  },
+
     {
       title: 'Active Directory Manager',
       description: 'Custom AD management dashboard for streamlined user provisioning.',
