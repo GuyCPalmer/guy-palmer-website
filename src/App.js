@@ -88,7 +88,7 @@ export default function App() {
   excerpt: 'I stand at a crossroads, my career path more a series of detours than a direct route to fulfillment...',
   date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-navigating-the-second-act-b527a06a8ede'
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-navigating-the-second-act-b527a06a8ede'
 },
 
     {
@@ -96,14 +96,14 @@ export default function App() {
   excerpt: 'Buckle up as we navigate through the complicated world of cybersecurity, where the thrill of crafting phishing emails collides...',
   date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-go-phish-99fdce084053'
+  url: 'https://medium.com/@guycpalmer_guycodecracking-the-code-go-phish-99fdce084053'
 },
 {
   title: 'Cracking the Code: Incident Response',
   excerpt: 'Exploring the critical world of cybersecurity incident response, where preparation meets action in protecting digital infrastructure...',
   date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-incident-response-c83d80edf002'
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-incident-response-c83d80edf002'
 }
 ];
 
@@ -642,7 +642,7 @@ export default function App() {
 {/* View All Posts Button */}
 <div className="text-center mt-12">
   <a
-    href="https://medium.com/@guycpalmer_26364"
+    href="https://medium.com/@guycpalmer_guycode"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center gap-2 px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-semibold rounded-lg transition-all hover:scale-105"
