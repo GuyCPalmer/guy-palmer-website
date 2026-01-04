@@ -96,7 +96,7 @@ export default function App() {
   excerpt: 'Buckle up as we navigate through the complicated world of cybersecurity, where the thrill of crafting phishing emails collides...',
   date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_guycodecracking-the-code-go-phish-99fdce084053'
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-go-phish-99fdce084053'
 },
 {
   title: 'Cracking the Code: Incident Response',
