@@ -47,7 +47,7 @@ export default function App() {
       {
     title: 'Fraud Detection Dashboard',
     description: 'Built a Splunk dashboard analyzing 10,000+ financial transactions to detect fraud patterns across demographics, categories, and merchants using custom SPL queries.',
-    tags: ['Splunk', 'SPL', 'Data Analysis', 'Fraud Detection'],
+    tags: ['Splunk', 'spl', 'Data Analysis', 'Data Visualization', 'Fraud Detection'],
     icon: Shield,
     url: 'https://github.com/GuyCPalmer/Fraud-Analysis---Splunk-Dashboard-to-Combat-Financial-Fraud'
   },
