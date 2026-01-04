@@ -668,8 +668,8 @@ export default function App() {
             <div className="space-y-6">
               <div className="flex items-center justify-center gap-3 text-lg">
                 <Mail className="w-6 h-6 text-cyan-400" />
-                <a href="mailto:GuyCPalmer@yahoo.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
-                  GuyCPalmer@yahoo.com
+                <a href="mailto:GuyCPalmer@gmail.com" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+                  GuyCPalmer@gmail.com
                 </a>
               </div>
               <div className="flex items-center justify-center gap-3 text-lg">
@@ -680,7 +680,7 @@ export default function App() {
                 <a href="https://github.com/GuyCPalmer" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 transition-all">
   <Github className="w-6 h-6" />
 </a>
-                <a href="https://www.linkedin.com/in/your-profile-url" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 transition-all">
+                <a href="https://www.linkedin.com/in/guy-palmer" target="_blank" rel="noopener noreferrer" className="p-3 bg-slate-800 rounded-lg hover:bg-cyan-500/20 hover:text-cyan-400 transition-all">
   <Linkedin className="w-6 h-6" />
 </a>
               </div>
