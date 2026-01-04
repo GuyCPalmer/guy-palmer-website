@@ -96,6 +96,13 @@ export default function App() {
   date: '2024',
   category: 'journey',
   url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-go-phish-99fdce084053'
+},
+{
+  title: 'Cracking the Code: Incident Response',
+  excerpt: 'Exploring the critical world of cybersecurity incident response, where preparation meets action in protecting digital infrastructure...',
+  date: '2024',
+  category: 'journey',
+  url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-incident-response-c83d80edf002'
 }
 ];
 
