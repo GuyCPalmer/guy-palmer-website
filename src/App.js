@@ -453,7 +453,7 @@ export default function App() {
             </span>
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-slate-900/50 backdrop-blur-sm p-8 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+            <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
              <h3 className="text-2xl font-bold mb-4 text-cyan-400">whoami -v</h3>
               <p className="text-slate-300 leading-relaxed mb-4">
                I am a Core Technician Manager with a CompTIA Security+ certification, leading a team of five technicians supporting enterprise-scale cybersecurity platforms at KnowBe4. I provide technical leadership while remaining hands-on with complex customer environments, ensuring reliable, secure platform operations.
@@ -465,7 +465,7 @@ export default function App() {
               As a manager, I mentor technicians, oversee escalations, and drive consistent troubleshooting standards to improve resolution times and deployment outcomes, aligning technical execution with security best practices.
               </p>
             </div>
-            <div className="bg-slate-900/50 backdrop-blur-sm p-8 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+            <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
               <h3 className="text-2xl font-bold mb-4 text-cyan-400">Current Focus</h3>
 <p className="text-slate-300 leading-relaxed mb-6">
   Advancing into Cloud Security Engineering with specialization in Identity & Access Management and Azure security architecture. Pursuing Azure Administrator (AZ-104) and Azure Security Engineer (AZ-500) certifications to formalize enterprise-level experience with Azure AD/Entra ID, SCIM provisioning, authentication systems, and security controls. Leveraging hands-on expertise in cloud identity management to build comprehensive cloud security solutions.
