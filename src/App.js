@@ -81,7 +81,7 @@ export default function App() {
   excerpt: 'In today\'s rapidly advancing digital world, the allure of prestigious job titles within the cybersecurity domain is undeniable...',
   date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-a-journey-beyond-titles-f17dc832a5cd'
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-a-journey-beyond-titles-f17dc832a5cd'
 },
     {
   title: 'Cracking the Code: Navigating the Second Act',
