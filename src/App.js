@@ -89,13 +89,15 @@ export default function App() {
   category: 'journey',
   url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-navigating-the-second-act-b527a06a8ede'
 },
+
     {
-      title: 'Cracking the Code: Go Phish',
-      excerpt: 'Buckle up as we navigate through the complicated world of cybersecurity, where the thrill of crafting phishing emails collides...',
-      date: '2024',
-      category: 'journey'
-    }
-  ];
+  title: 'Cracking the Code: Go Phish',
+  excerpt: 'Buckle up as we navigate through the complicated world of cybersecurity, where the thrill of crafting phishing emails collides...',
+  date: '2024',
+  category: 'journey',
+  url: 'https://medium.com/@guycpalmer_26364/cracking-the-code-go-phish-99fdce084053'
+}
+];
 
   const filteredPosts = selectedCategory === 'all' 
     ? blogPosts 
