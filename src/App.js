@@ -49,7 +49,8 @@ export default function App() {
     description: 'Built a Splunk dashboard analyzing 10,000+ financial transactions to detect fraud patterns across demographics, categories, and merchants using custom SPL queries.',
     tags: ['Splunk', 'spl', 'Data Analysis', 'Data Visualization', 'Fraud Detection'],
     icon: Shield,
-    url: 'https://github.com/GuyCPalmer/Fraud-Analysis---Splunk-Dashboard-to-Combat-Financial-Fraud'
+    url: 'https://github.com/GuyCPalmer/Fraud-Analysis---Splunk-Dashboard-to-Combat-Financial-Fraud',
+    image: '/splunk-dashboard.png'
   },
 
     {
@@ -73,10 +74,25 @@ export default function App() {
   const blogCategories = [
     { id: 'all', label: 'All Posts' },
     { id: 'journey', label: 'Journey into Cybersecurity' },
+    { id: 'troubleshooting', label: 'Have You Tried Turning It Off' },
   ];
 
   const blogPosts = [
-{
+   {
+  title: 'Cracking the Code: Python',
+  excerpt: 'Diving into Python programming fundamentals and its powerful applications in cybersecurity automation and scripting...',
+  date: '2026',
+  category: 'journey',
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-python-b532a38e448d'
+},
+    {
+  title: 'Cracking the Code: WannaCry',
+  excerpt: 'Exploring the infamous WannaCry ransomware attack, its global impact, and critical lessons for cybersecurity preparedness and defense strategies...',
+  date: '2026',
+  category: 'journey',
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-wanna-cry-5045688d2e91'
+},
+    {
   title: 'Cracking the Code: A Journey Beyond Titles',
   excerpt: 'In today\'s rapidly advancing digital world, the allure of prestigious job titles within the cybersecurity domain is undeniable...',
   date: '2024',
@@ -526,6 +542,24 @@ export default function App() {
     </div>
   </div>
 </div>
+{/* CompTIA Security+ */}
+<div className="relative md:ml-16">
+  <div className="absolute -left-16 top-6 w-12 h-12 bg-slate-900 border-4 border-cyan-500 rounded-full hidden md:flex items-center justify-center">
+    <Shield className="w-5 h-5 text-cyan-400" />
+  </div>
+  <div className="bg-slate-900/50 backdrop-blur-sm p-8 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+      <div>
+        <h3 className="text-2xl font-bold text-cyan-400">CompTIA Security+</h3>
+        <p className="text-slate-400">CompTIA Certification</p>
+      </div>
+      <span className="text-slate-400 text-sm mt-2 sm:mt-0">May 2024</span>
+    </div>
+    <p className="text-slate-300 leading-relaxed">
+      Earned industry-recognized certification validating foundational cybersecurity skills including threat detection, risk management, cryptography, and security operations. Demonstrates commitment to professional development and mastery of core security principles essential for enterprise IT environments.
+    </p>
+  </div>
+</div>
               <div className="relative md:ml-16">
                 <div className="absolute -left-16 top-6 w-12 h-12 bg-slate-900 border-4 border-blue-500 rounded-full hidden md:flex items-center justify-center">
                   <Code className="w-5 h-5 text-blue-400" />
@@ -556,36 +590,53 @@ export default function App() {
             </span>
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-               {projects.map((project, idx) => (
-                 <a key={idx}
-                   href={project.url}
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all hover:scale-105 group block"
-                 >
-                   <div className="flex items-center justify-between mb-4">
-                     <div className="flex items-center gap-3">
-                       <div className="p-3 bg-cyan-500/10 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
-                         <project.icon className="w-6 h-6 text-cyan-400" />
-                </div>
-                <h3 className="text-xl font-bold">{project.title}</h3>
-                  </div>
-                  <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
-                </div>
-                <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIdx) => (
-                    <span
-                      key={tagIdx}
-                      className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-full border border-slate-700"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </a>
-            ))}
+  {projects.map((project, idx) => (
+    <a 
+      key={idx}
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all hover:scale-105 group block relative overflow-hidden"
+    >
+      {/* Hover Image Overlay */}
+      {project.image && (
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/40"></div>
+          <div className="absolute bottom-6 left-6 right-6">
+            <p className="text-cyan-400 font-semibold text-lg">View Project Details →</p>
           </div>
+        </div>
+      )}
+      
+      {/* Original Card Content */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-3">
+          <div className="p-3 bg-cyan-500/10 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
+            <project.icon className="w-6 h-6 text-cyan-400" />
+          </div>
+          <h3 className="text-xl font-bold">{project.title}</h3>
+        </div>
+        <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+      </div>
+      <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
+      <div className="flex flex-wrap gap-2">
+        {project.tags.map((tag, tagIdx) => (
+          <span
+            key={tagIdx}
+            className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-full border border-slate-700"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+    </a>
+  ))}
+</div>
         </div>
       </section>
 {/* Blog Section */}
