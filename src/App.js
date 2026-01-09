@@ -73,7 +73,7 @@ export default function App() {
 
   const blogCategories = [
     { id: 'all', label: 'All Posts' },
-    { id: 'journey', label: 'Journey into Cybersecurity' },
+    { id: 'journey', label: 'Cracking the Code' },
     { id: 'troubleshooting', label: 'Have You Tried Turning It Off' },
   ];
 
