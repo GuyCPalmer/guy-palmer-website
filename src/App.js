@@ -79,25 +79,25 @@ export default function App() {
 
   const blogPosts = [
    {
-  title: 'Cracking the Code: Python',
-  excerpt: 'Diving into Python programming fundamentals and its powerful applications in cybersecurity automation and scripting...',
-  date: '2026',
+  title: 'Cracking the Code: Network Ninja',
+  excerpt: 'Figuring out how data moves, how systems talk to each other, and what’s really happening behind the scenes...',
+  date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-python-b532a38e448d'
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-network-ninja-fd72f7346e79'
 },
     {
   title: 'Cracking the Code: WannaCry',
   excerpt: 'Exploring the infamous WannaCry ransomware attack, its global impact, and critical lessons for cybersecurity preparedness and defense strategies...',
-  date: '2026',
+  date: '2024',
   category: 'journey',
   url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-wanna-cry-5045688d2e91'
 },
     {
-  title: 'Cracking the Code: A Journey Beyond Titles',
-  excerpt: 'In today\'s rapidly advancing digital world, the allure of prestigious job titles within the cybersecurity domain is undeniable...',
+  title: 'Cracking the Code: Go Phish',
+  excerpt: 'Buckle up as we navigate through the complicated world of cybersecurity, where the thrill of crafting phishing emails collides with the sobering challenges of ethics…',
   date: '2024',
   category: 'journey',
-  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-a-journey-beyond-titles-f17dc832a5cd'
+  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-go-phish-99fdce084053'
 },
     {
   title: 'Cracking the Code: Navigating the Second Act',
