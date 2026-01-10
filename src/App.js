@@ -78,7 +78,14 @@ export default function App() {
   ];
 
   const blogPosts = [
-   {
+  {
+  title: 'Have You Tried Turning It Off: One Year in the Real World',
+  excerpt: 'Reflecting on my first year in cybersecurity, lessons learned from real-world troubleshooting, and the unexpected challenges of transitioning from theory to practice...',
+  date: '2026',
+  category: 'troubleshooting',
+  url: 'https://medium.com/@guycpalmer_guycode/have-you-tried-turning-it-off-one-year-in-the-real-world-937f208ce7e5'
+},
+    {
   title: 'Cracking the Code: Network Ninja',
   excerpt: 'Figuring out how data moves, how systems talk to each other, and what’s really happening behind the scenes...',
   date: '2024',
