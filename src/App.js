@@ -56,7 +56,7 @@ export default function App() {
     {
       title: 'Active Directory Manager',
       description: 'Custom AD management dashboard for streamlined user provisioning.',
-      tags: ['PowerShell', 'Active Directory', 'React'],
+      tags: ['PowerShell', 'Active Directory', 'Microsoft', 'Automation', 'M365'],
       icon: Server,
       url: '#'
     },
