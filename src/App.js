@@ -508,7 +508,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Skills & Expertise Section */}
+{/* Skills & Expertise Section */}
 <section id="skills" className="py-20 px-4 relative">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-bold mb-12 text-center">
@@ -517,7 +517,7 @@ export default function App() {
       </span>
     </h2>
     
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-3 gap-8">
       
       {/* Identity & Access Management */}
       <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
@@ -536,7 +536,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* Security Tools */}
+      {/* Security Operations */}
       <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
         <div className="flex items-center gap-3 mb-4">
           <Shield className="w-6 h-6 text-cyan-400" />
@@ -552,7 +552,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* Cloud Platforms */}
+      {/* Cloud Platforms & Security */}
       <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
         <div className="flex items-center gap-3 mb-4">
           <Server className="w-6 h-6 text-cyan-400" />
@@ -560,24 +560,8 @@ export default function App() {
         </div>
         <div className="flex flex-wrap gap-2">
           <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Microsoft Azure</span>
-          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Google Workspace</span>
           <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Microsoft 365</span>
           <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Azure Portal</span>
-        </div>
-      </div>
-
-      {/* Scripting & Automation */}
-      <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
-        <div className="flex items-center gap-3 mb-4">
-          <Terminal className="w-6 h-6 text-cyan-400" />
-          <h3 className="text-xl font-bold text-cyan-400">Automation & Infrastructure</h3>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">PowerShell</span>
-          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Python</span>
-          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Bash</span>
-          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">API Integration</span>
-          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Automation</span>
         </div>
       </div>
 
