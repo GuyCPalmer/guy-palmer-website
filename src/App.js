@@ -55,9 +55,9 @@ export default function App() {
   },
 
     {
-      title: 'Active Directory Manager',
-      description: 'Custom AD management dashboard for streamlined user provisioning.',
-      tags: ['PowerShell', 'Active Directory', 'Microsoft', 'Automation', 'M365'],
+      title: 'Zero Trust Identity Lab',
+      description: 'Zero Trust architecture implementation in Azure featuring conditional access policies, privileged access management, RBAC controls, and PowerShell automation for IAM operations.',
+      tags: ['Azure AD', 'Conditional Access', 'RBAC', 'Zero Trust', 'IAM'],
       icon: Server,
       url: '#'
     },
