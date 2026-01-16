@@ -508,6 +508,83 @@ export default function App() {
         </div>
       </section>
 
+      {/* Skills & Expertise Section */}
+<section id="skills" className="py-20 px-4 relative">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold mb-12 text-center">
+      <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        Skills & Expertise
+      </span>
+    </h2>
+    
+    <div className="grid md:grid-cols-2 gap-8">
+      
+      {/* Identity & Access Management */}
+      <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+        <div className="flex items-center gap-3 mb-4">
+          <Lock className="w-6 h-6 text-cyan-400" />
+          <h3 className="text-xl font-bold text-cyan-400">Identity & Access Management</h3>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Azure AD/Entra ID</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Active Directory</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">SCIM</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">OAuth</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">SAML</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">SSO</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">MFA</span>
+        </div>
+      </div>
+
+      {/* Security Tools */}
+      <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+        <div className="flex items-center gap-3 mb-4">
+          <Shield className="w-6 h-6 text-cyan-400" />
+          <h3 className="text-xl font-bold text-cyan-400">Security Operations</h3>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Splunk</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">SIEM</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">KnowBe4</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Security Analytics</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Log Analysis</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Threat Detection</span>
+        </div>
+      </div>
+
+      {/* Cloud Platforms */}
+      <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+        <div className="flex items-center gap-3 mb-4">
+          <Server className="w-6 h-6 text-cyan-400" />
+          <h3 className="text-xl font-bold text-cyan-400">Cloud Platforms & Security</h3>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Microsoft Azure</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Google Workspace</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Microsoft 365</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Azure Portal</span>
+        </div>
+      </div>
+
+      {/* Scripting & Automation */}
+      <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+        <div className="flex items-center gap-3 mb-4">
+          <Terminal className="w-6 h-6 text-cyan-400" />
+          <h3 className="text-xl font-bold text-cyan-400">Automation & Infrastructure</h3>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">PowerShell</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Python</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Bash</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">API Integration</span>
+          <span className="px-3 py-1 bg-slate-800 text-slate-300 text-sm rounded-full border border-slate-700">Automation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
       {/* Experience Section */}
       <section id="experience" className="py-20 px-4 relative bg-slate-900/30">
         <div className="max-w-6xl mx-auto">
