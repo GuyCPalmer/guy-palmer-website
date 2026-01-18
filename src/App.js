@@ -56,8 +56,8 @@ export default function App() {
 
     {
       title: 'Zero Trust Identity Lab',
-      description: 'Zero Trust architecture implementation in Azure featuring conditional access policies, privileged access management, RBAC controls, and PowerShell automation for IAM operations.',
-      tags: ['Azure AD', 'Conditional Access', 'RBAC', 'Zero Trust', 'IAM'],
+      description: 'Automated enterprise identity management system implementing Zero Trust principles through custom RBAC roles, PowerShell-driven user provisioning, security compliance automation, and infrastructure-as-code practices for Azure IAM operations.',
+      tags: ['Azure AD', 'PowerShell', 'RBAC', 'Zero Trust', 'Entra ID'],
       icon: Server,
       url: '#'
     },
