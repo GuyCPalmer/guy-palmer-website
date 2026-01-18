@@ -35,14 +35,14 @@ export default function App() {
   };
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'blog', label: 'Blog' },
-    { id: 'contact', label: 'Contact' }
-  ];
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'blog', label: 'Blog' },
+  { id: 'contact', label: 'Contact' }
+];
 
   const projects = [
       {
@@ -136,11 +136,13 @@ export default function App() {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   const certifications = [
-    'CompTIA Security+ (May 2024)',
-    'Evolve Security Certified Professional (2024)',
-    'Certificate in Cyber Security (2024)',
-    'Azure Administrator (AZ-104) - In Progress'
-  ];
+  'CompTIA Security+ (May 2024)',
+  'Evolve Security Certified Professional (2024)',
+  'Certificate in Cyber Security (2024)',
+  'Azure Administrator (AZ-104) - In Progress',
+  'Azure Security Engineer (AZ-500) - In Progress',
+  'HashiCorp Terraform Associate - In Progress'
+];
 
   return (
     <div className="bg-slate-950 text-slate-100 min-h-screen">
@@ -481,19 +483,21 @@ export default function App() {
             <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
              <h3 className="text-2xl font-bold mb-4 text-cyan-400">whoami -v</h3>
               <p className="text-slate-300 leading-relaxed mb-4">
-               I am a Core Technician Manager with a CompTIA Security+ certification, leading a team of five technicians supporting enterprise-scale cybersecurity platforms at KnowBe4. I provide technical leadership while remaining hands-on with complex customer environments, ensuring reliable, secure platform operations.
-              </p>
-            <p className="text-slate-300 leading-relaxed mb-4">
-              My expertise centers on identity and access management, including integrations with Microsoft Entra ID (Azure AD), Active Directory, SCIM provisioning, and Google Workspace. I troubleshoot authentication, synchronization, and provisioning issues, implement IP and domain whitelisting, and analyze logs to resolve complex platform and integration problems.
-              </p>
-            <p className="text-slate-300 leading-relaxed">
-              As a manager, I mentor technicians, oversee escalations, and drive consistent troubleshooting standards to improve resolution times and deployment outcomes, aligning technical execution with security best practices.
-              </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+  I still remember my first major Azure AD sync failure at KnowBe4—5,000 users couldn't log in, and I was deep in error logs trying to figure out why. That kind of problem-solving led to my promotion to Core Technician Manager, where I now lead a team of five technicians specializing in identity and access management within Microsoft environments—Azure AD, Entra ID, Active Directory, and the complex integrations that hold enterprise security together.
+        </p>
+<p className="text-slate-300 leading-relaxed mb-4">
+  Most of my day is spent solving problems that break at the worst possible time. SCIM provisioning that mysteriously stops syncing. SSO configurations that work perfectly in testing but fail in production. Azure AD conditional access policies that lock out the CEO (that's always fun). These aren't glamorous problems, but they're the foundation of Zero Trust architecture—and I genuinely enjoy untangling them.
+</p>
+</p>
+              <p className="text-slate-300 leading-relaxed">
+  Now I'm deepening that specialization—formalizing my hands-on IAM experience with Azure certifications and building the skills to architect enterprise-scale identity security solutions.
+</p>
             </div>
             <div className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
               <h3 className="text-2xl font-bold mb-4 text-cyan-400">Current Focus</h3>
 <p className="text-slate-300 leading-relaxed mb-6">
-  Advancing into Cloud Security Engineering with specialization in Identity & Access Management and Azure security architecture. Pursuing Azure Administrator (AZ-104) and Azure Security Engineer (AZ-500) certifications to formalize enterprise-level experience with Azure AD/Entra ID, SCIM provisioning, authentication systems, and security controls. Leveraging hands-on expertise in cloud identity management to build comprehensive cloud security solutions.
+  Specializing in Cloud Identity & Access Management Security with deep expertise in Azure/Entra ID environments. Currently pursuing Azure Administrator (AZ-104) and Azure Security Engineer (AZ-500) certifications to architect enterprise-scale IAM solutions. Building a Zero Trust Identity Lab in my spare time because the best way to understand security architecture is to build it yourself—even if it's just in Azure's free tier.
 </p>
               <div className="space-y-2">
                 <h4 className="font-semibold text-cyan-400 mb-3">Certifications</h4>
@@ -508,7 +512,65 @@ export default function App() {
           </div>
         </div>
       </section>
-
+{/* Projects Section */}
+      <section id="projects" className="py-20 px-4 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Projects
+            </span>
+              </h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {projects.map((project, idx) => (
+    <a 
+      key={idx}
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all hover:scale-105 group block relative overflow-hidden"
+    >
+      {/* Hover Image Overlay */}
+      {project.image && (
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/40"></div>
+          <div className="absolute bottom-6 left-6 right-6">
+            <p className="text-cyan-400 font-semibold text-lg">View Project Details →</p>
+          </div>
+        </div>
+      )}
+      
+      {/* Original Card Content */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-3">
+          <div className="p-3 bg-cyan-500/10 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
+            <project.icon className="w-6 h-6 text-cyan-400" />
+          </div>
+          <h3 className="text-xl font-bold">{project.title}</h3>
+        </div>
+        <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
+      </div>
+      <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
+      <div className="flex flex-wrap gap-2">
+        {project.tags.map((tag, tagIdx) => (
+          <span
+            key={tagIdx}
+            className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-full border border-slate-700"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+    </a>
+  ))}
+</div>
+        </div>
+      </section>
+      
 {/* Skills & Expertise Section */}
 <section id="skills" className="py-20 px-4 relative">
   <div className="max-w-6xl mx-auto">
@@ -650,64 +712,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-20 px-4 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Projects
-            </span>
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-  {projects.map((project, idx) => (
-    <a 
-      key={idx}
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-slate-900/50 backdrop-blur-sm p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition-all hover:scale-105 group block relative overflow-hidden"
-    >
-      {/* Hover Image Overlay */}
-      {project.image && (
-        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-950/40"></div>
-          <div className="absolute bottom-6 left-6 right-6">
-            <p className="text-cyan-400 font-semibold text-lg">View Project Details →</p>
-          </div>
-        </div>
-      )}
-      
-      {/* Original Card Content */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-3">
-          <div className="p-3 bg-cyan-500/10 rounded-lg group-hover:bg-cyan-500/20 transition-colors">
-            <project.icon className="w-6 h-6 text-cyan-400" />
-          </div>
-          <h3 className="text-xl font-bold">{project.title}</h3>
-        </div>
-        <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-cyan-400 transition-colors" />
-      </div>
-      <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
-      <div className="flex flex-wrap gap-2">
-        {project.tags.map((tag, tagIdx) => (
-          <span
-            key={tagIdx}
-            className="px-3 py-1 bg-slate-800 text-cyan-400 text-sm rounded-full border border-slate-700"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-    </a>
-  ))}
-</div>
-        </div>
-      </section>
+    
 {/* Blog Section */}
 <section id="blog" className="py-20 px-4 relative bg-slate-900/30">
   <div className="max-w-6xl mx-auto">
