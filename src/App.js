@@ -82,7 +82,7 @@ export default function App() {
    {
   title: 'Have you Tried Turning It Off: When the Knowledge Base Fails',
   excerpt: 'If something breaks, there’s supposed to be an article for it. A process. A clean sequence of steps that ends with the problem going away...',
-  date: '2024',
+  date: '2026',
   category: 'troubleshooting',
   url: 'https://medium.com/@guycpalmer_guycode/have-you-tried-turning-it-off-when-the-knowledge-base-fails-66c3f3a0b98b'
 },
