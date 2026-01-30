@@ -79,19 +79,19 @@ export default function App() {
   ];
 
   const blogPosts = [
-  {
+   {
+  title: 'Have you Tried Turning It Off: When the Knowledge Base Fails',
+  excerpt: 'If something breaks, there’s supposed to be an article for it. A process. A clean sequence of steps that ends with the problem going away...',
+  date: '2024',
+  category: 'troubleshooting',
+  url: 'https://medium.com/@guycpalmer_guycode/have-you-tried-turning-it-off-when-the-knowledge-base-fails-66c3f3a0b98b'
+},
+    {
   title: 'Have You Tried Turning It Off: One Year in the Real World',
   excerpt: 'Reflecting on my first year in cybersecurity, lessons learned from real-world troubleshooting, and the unexpected challenges of transitioning from theory to practice...',
   date: '2026',
   category: 'troubleshooting',
   url: 'https://medium.com/@guycpalmer_guycode/have-you-tried-turning-it-off-one-year-in-the-real-world-937f208ce7e5'
-},
-    {
-  title: 'Cracking the Code: Network Ninja',
-  excerpt: 'Figuring out how data moves, how systems talk to each other, and what’s really happening behind the scenes...',
-  date: '2024',
-  category: 'journey',
-  url: 'https://medium.com/@guycpalmer_guycode/cracking-the-code-network-ninja-fd72f7346e79'
 },
     {
   title: 'Cracking the Code: WannaCry',
